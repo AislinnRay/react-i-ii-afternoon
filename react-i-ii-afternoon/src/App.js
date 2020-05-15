@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Citizen from './components/Citizen';
-//import { Link } from "react-router-dom";
-//import router from "./router";
+import './App.css'
 import data from './data';
 import logo from './logo.svg';
 import './App.css';
@@ -51,10 +50,12 @@ export default class App extends Component {
     const navigation= this.state.navigation
     return (
       <div className="App">
-        <button onClick={this.home}>Home</button>
-        {citizens}
-        <button onClick={this.decrease}>Previous</button>
-        <button onClick={this.increase}>Next</button>
+        <header className="Header">
+          <button className="Home" onClick={this.home}>Home</button>
+          </header>
+          <div className="Card">{citizens}</div>
+        <button className="Nav"onClick={this.decrease}>Previous</button>
+        <button className="Nav"onClick={this.increase}>Next</button>
       </div>
    );
   }
