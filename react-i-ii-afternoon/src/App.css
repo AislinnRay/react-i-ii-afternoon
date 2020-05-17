@@ -1,41 +1,27 @@
 .App {
   background-color: rgb(53, 53, 53);
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
 }
 
 .Header {
-  text-align: left;
   background-color: rgb(92, 162, 206);
-  width: 100vw;
-  height: 100px;
+  padding: 40px 60px;
 }
 
 .Card {
-  display: flex;
-  justify-content: center;
-  margin: 40px;
-  margin-left: 20vw;
-  margin-right: 10vw;
   background-color: white;
-  max-width: 60vw;
-  border-radius: 15%;
+  padding: 40px 60px;
+  width: 60vw;
+  margin: 120px auto;
 }
 
 .ID {
-  display:flex;
-  align-items: flex-end;
-  margin-left: 45vw;
+  text-align: right;
+  font-size: 16pt;
+  font-weight: 600pt;
+  position: absolute;
+  top: -15px;
+  right: 15px;
 }
 
 .Nav, .Home {
@@ -58,7 +44,6 @@
 
 .Home {
   background-color:  rgb(92, 162, 206);
-
 }
 
   .Nav:hover {
@@ -72,3 +57,8 @@
     align-items: center;
   }
 
+  .Name {
+    position: relative;
+    text-decoration: lightskyblue underline;
+
+  }
